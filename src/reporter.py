@@ -17,6 +17,13 @@ class DataFrameReporter:
         print('Количество дубликатов:', duplicates)
 
         print('Доля дубликатов:', format(duplicates / df.shape[0], self.percent_format))
+        # выведите количество пропусков во всем датафрейме одним числом
+        print(f'Количество пропусков: {df.isna().sum().sum()}')
+        # выведите долю пропусков во всем датафрейме одним числом с плавающей точкой
+        # в формате float_format
+        null_avr = df.isna().sum().sum()
+        print(f'Доля пропусков: {format(df.isna().sum().sum()/(df.shape[0] * df.shape[1]), self.float_format)}')
+
 
 import pandas as pd
 
