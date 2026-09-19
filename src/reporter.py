@@ -30,5 +30,5 @@ print()
 reporter_2.show_report(data, 'Отчёт в формате 2:')
 
 # вызови метод show_report для reporter, передав в него датафрейм
-reporter_1.show_report(data)
-reporter_2.show_report(data) 
+#reporter_1.show_report(data)
+#reporter_2.show_report(data) 
