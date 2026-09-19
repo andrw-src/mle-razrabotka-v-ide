@@ -11,7 +11,7 @@ from src.reporter import DataFrameReporter
 
 def main():
     data = pd.read_csc('./data/payments.csv')
-    reporter = DataFrameReport()
+    reporter = DataFrameReporter()
     reporter.show_reporter(data)
 
 # Вызов функции main будет происходить через эту конструкцию if __name__. В Python существует дефолтная переменная __name__, которая при открытии файла будет изменена на __main__.
